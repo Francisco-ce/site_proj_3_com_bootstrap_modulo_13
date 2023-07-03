@@ -1,0 +1,44 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #e15f41;
+}
+
+.nav .nav-link.active {
+    background-color: #fff;
+    color: #e15f41;
+}
+
+.nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover {
+    color:#fff;
+}
+
+/* comentei o seguinte comando pois usei o ",section-title" para alterar a fonte. */
+
+/* .navbar-brand {
+    font-family: Pacifico, cursive;
+} */
+
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+.section-title span {
+    color:  #e15f41;
+}
+
+#sobre-o-restaurante {
+    background-color: #ffeae6;
+}
+
+.text-colored {
+    color: #e15f41;
+}
