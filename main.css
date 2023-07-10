@@ -31,9 +31,10 @@ body {
     font-family: Pacifico, cursive;
 }
 
-.section-title span {
+/* comentei pois vamos utilizar o valor ".text-colored" para os textos */
+/* .section-title span {
     color:  #e15f41;
-}
+} */
 
 #sobre-o-restaurante {
     background-color: #ffeae6;
