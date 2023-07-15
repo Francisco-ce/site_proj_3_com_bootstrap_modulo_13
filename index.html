@@ -30,6 +30,8 @@ rounded - deixa as bordas arredondadas
 texto qualquer para fazer o commit
 -->
 <body>
+    <!--cabeçaho do saite - aqui vamos ter:
+        1. os botões das atividades do restaurante-->
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
             <h1 class="navbar-brand m-0 section-title">Nome do Restaurante</h1>
@@ -49,7 +51,7 @@ texto qualquer para fazer o commit
                             Eventos</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="" class="nav-link">
+                        <a href="#cardapio" class="nav-link">
                             <i class="bi bi-card-text me-1"></i>
                             Novo Cardápio</a>
                     </li>
@@ -63,6 +65,9 @@ texto qualquer para fazer o commit
         </div>
     </header>
     <div data-bs-spy="scroll" data-bs-target="cabecalho">
+        <!--nessa seção vamos ter:
+            1. Informativo sobre o restaurante
+            2. Carousel-->
         <section id="sobre-o-restaurante">
             <div class="carousel slide text-center" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
@@ -113,6 +118,7 @@ texto qualquer para fazer o commit
                 </div>
             </div>
         </section>
+        <!--aqui vamos tee o informativas das atividades do restaurante com fotos e descritivos-->
         <section id="eventos" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
@@ -152,22 +158,153 @@ texto qualquer para fazer o commit
         <section id="cardapio">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">
+                    <h2 class="section-title text-center mb-5"><!--mb: colocando uma margem no cardápio-->
                         Nosso <span class="text-colored">cardápio</span>
                     </h2>
                 </div>
                 <div class="row">
                     <aside class="col-md-2">
                         <nav class="nav nav-pills flex-column nav-cardapio"><!-- nav-cardapio é apenas para estilizar essa nav, não tem nada a ver com bootstrap-->
-                            <button type="button" class="fw-bold text-start nav-link text-colored  active">Bebidas não alcóolicas</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored ">Bebidas alcóolicas</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored ">Entradas</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored ">Pratos principais</button>
-                            <button type="button" class="fw-bold text-start nav-link text-colored ">Sobremesas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-nao-alcoolicas" class="fw-bold text-start nav-link text-colored  active">Bebidas não alcóolicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored ">Bebidas alcóolicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored ">Entradas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored ">Pratos principais</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesa" class="fw-bold text-start nav-link text-colored ">Sobremesas</button>
                         </nav>
                     </aside>
                     <div class="col-md-10">
-                        conteúdo do menu
+                        <div class="tab-content"> <!--Tab-content cria "abas", portanto, dento dessa div vão conter os conteúdos das abas da tag ASIDE-->
+                            <!--aba das bebidas não alcóolicas-->
+                            <div class="tab-pane active" id="bebidas-nao-alcoolicas"> <!--id para programar a exebição-->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/suco.jpg" alt="Suco"><!-- d-block: display block, deixa o  -->
+                                        <h5 class="text-colored fw-bold mt-2">Suco de Laranja</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Aba das bebidas alcóolicas-->
+                            <div class="tab-pane" id="bebidas-alcoolicas"> <!--id para programar a exebição-->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/vinho.jpg" alt="vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Vinho</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/bebidas/cerveja.jpg" alt="cerveja"><!-- d-block: display block, deixa o  -->
+                                        <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--aba entradas-->
+                            <div class="tab-pane" id="entradas"> <!--id para programar a exebição-->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/entradas/entrada.jpg" alt="entrada"><!-- d-block: display block, deixa o  -->
+                                        <h5 class="text-colored fw-bold mt-2">Entrada</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--aba pratos principais-->
+                            <div class="tab-pane" id="pratos-principais"> <!--id para programar a exebição-->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="salmao">
+                                        <h5 class="text-colored fw-bold mt-2">Salmão</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="pizza"><!-- d-block: display block, deixa o  -->
+                                        <h5 class="text-colored fw-bold mt-2">Pizza</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--aba sobremesas-->
+                            <div class="tab-pane" id="sobremesa"> <!--id para programar a exebição-->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/bolo.jpg" alt="bolo">
+                                        <h5 class="text-colored fw-bold mt-2">Bolo</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/sobremesas/cupcake.jpg" alt="cupcake"><!-- d-block: display block, deixa o  -->
+                                        <h5 class="text-colored fw-bold mt-2">Cupcake</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, quas nihil reprehenderit iste odit deserunt?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

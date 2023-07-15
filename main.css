@@ -37,9 +37,11 @@ body {
     color:  #e15f41;
 } */
 
-#sobre-o-restaurante {
+
+
+#sobre-o-restaurante, #cardapio {
     background-color: #ffeae6;
-}
+} /* emambosis ids vãoter a cor de fundo*/
 
 .text-colored {
     color: #e15f41;
