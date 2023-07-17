@@ -64,20 +64,20 @@ texto qualquer para fazer o commit
             </nav>
         </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true"><!--esse ultimo camando é para ao escolher o botão do cabeçalho a seção vai para o início-->
         <!--nessa seção vamos ter:
             1. Informativo sobre o restaurante
             2. Carousel-->
         <section id="sobre-o-restaurante">
             <div class="carousel slide text-center" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="7000">
+                    <div class="carousel-item active" data-bs-interval="6000">
                         <img src="./images/slides/slide1.png" alt="espaço do restaurante">
                     </div>
-                    <div class="carousel-item" data-bs-interval="7000">
+                    <div class="carousel-item" data-bs-interval="6000">
                         <img src="./images/slides/slide2.png" alt="duas taças de vinho">
                     </div>
-                    <div class="carousel-item" data-bs-interval="7000">
+                    <div class="carousel-item" data-bs-interval="6000">
                         <img src="./images/slides/slide3.png" alt="comidas do restaurante">
                     </div>
                 </div>
@@ -99,7 +99,7 @@ texto qualquer para fazer o commit
                         <div class="col md-5">
                             <img src="./images/restaurante.jpg" class="d-block w-100 rounded" alt="foto do espaço do restaurante">
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-md-7 mt-3 mt-md-0"> <!-- "mt-md-0: conseguimos colocar ou tirar margem quando chega uma tela média (md)"-->
                             <h2 class="section-title">Sobre o <span class="text-colored">restaurante</span></h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptates? Eos, recusandae quisquam. Totam dolore officia repellat quisquam, quos beatae error illo odio perferendis modi, quae porro, a distinctio odit.
@@ -317,7 +317,7 @@ texto qualquer para fazer o commit
                     <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 mb-5">
                         <form>
                             <div class="mb-3">
                                 <label for="name" class="form-label fw-bold text-colored">Seu nome</label>
@@ -338,7 +338,7 @@ texto qualquer para fazer o commit
                             <button type="submit" class="btn fw-bold">Enviar</button>
                         </form>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5 ">
                         <div class="row">
                             <h3 class="section-title fs-4 text-colored">
                                 <i class="bi bi-hand-thumbs-up-fill"></i>
